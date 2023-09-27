@@ -1,4 +1,17 @@
 #include <Arduino.h>
+
+#include <TFT_ILI9163C.h>
+#include <SPI.h>
+#include "Imagen1.h"
+#include "Imagen2.h"
+
+#define CS 5
+#define DC 3 
+#define MOSI 23
+#define SCK 18
+
+TFT_ILI9163C tft=TFT_ILI9163C(CS,DC);
+
 // configuracion de pines de salida PWM
 const int temPin = 15;
 const int vibPin = 2;
